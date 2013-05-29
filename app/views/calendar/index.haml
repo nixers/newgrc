@@ -1,0 +1,10 @@
+= render :partial => 'layouts/content'
+%div
+%br/
+.content.clearfix
+	.section.main
+		.section.header
+			%h1 Calendar
+		= stylesheet_link_tag "event_calendar"
+		= javascript_include_tag "event_calendar"
+		= raw(event_calendar)

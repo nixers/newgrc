@@ -1,0 +1,29 @@
+= render :partial => 'layouts/content'
+.content.clearfix
+  .section.main
+    .section-header
+      %h1 Dashboard
+    .shortcut-group.section-content
+      .header.aligncenter
+        %h2 Audit Management
+      %ul.quick-menu.clearfix
+        %li.blue
+          %a{:href => "audit_index"}
+            %i.icon-group
+            %span Audit
+        %li.red
+          %a{:href => "report_index"}
+            %i.icon-file
+            %span Reports
+        %li
+          %a{:href => "recommendation_index"}
+            %i.icon-lightbulb
+            %span Recommendations
+        %li.green
+          %a{:href => "actions_index"}
+            %i.icon-ok
+            %span Action
+        %li.yellow
+          %a{:href => "governance_index"}
+            %i.icon-bar-chart
+            %span Governance

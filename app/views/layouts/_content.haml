@@ -1,0 +1,53 @@
+%html{:lang => "en"}
+  %head
+    %title Audit Managment
+    %link{:href => "assets/css/bootstrap.css", :rel => "stylesheet"}/
+    %link{:href => "assets/css/bootstrap-responsive.css", :rel => "stylesheet"}/
+    %link{:href => "//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css", :rel => "stylesheet"}/
+    %link{:href => "assets/css/styler.css", :rel => "stylesheet"}/
+    %link{:href => "http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css", :rel => "stylesheet"}/
+    %script{:src => "http://code.jquery.com/jquery-1.9.1.js"}
+    %script{:src => "http://code.jquery.com/ui/1.10.3/jquery-ui.js"}
+    %link{:href => "/resources/demos/style.css", :rel => "stylesheet"}/
+    :javascript
+      $(function() {
+      	var icons = {
+      		header: "ui-icon-circle-arrow-e",
+      		activeHeader: "ui-icon-circle-arrow-s"
+      	};
+      	$( "#accordion" ).accordion({
+      		icons: icons
+      	});
+      	$( "#toggle" ).button().click(function() {
+      		if ( $( "#accordion" ).accordion( "option", "icons" ) ) {
+      			$( "#accordion" ).accordion( "option", "icons", null );
+      		} else {
+      			$( "#accordion" ).accordion( "option", "icons", icons );
+      		}
+      	});
+      });
+        %body
+    = render :partial => 'layouts/header'
+    .content.clearfix
+      .section.menu
+        %ul.navigation.nav-collapse
+          %li.active
+            %a{:href => "dashboard_index"}
+              %i.icon-dashboard
+              %span Dashboard
+          %li
+            %a{:href => "print_index"}
+              %i.icon-print
+              %span Print
+          %li
+            %a{:href => "calendar_index"}
+              %i.icon-calendar
+              %span Calendar
+          %li
+            %a{:href => "find_index"}
+              %i.icon-search
+              %span Find
+          %li
+            %a{:href => "delete_index"}
+              %i.icon-trash
+              %span Delete

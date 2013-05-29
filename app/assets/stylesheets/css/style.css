@@ -1,0 +1,192 @@
+html {
+  overflow: hidden;
+}
+body {
+  margin: 0;
+}
+h1 {
+  font-size: 24px;
+  padding: 2px 10px;
+  margin: 0px;
+}
+body {
+  background: url(ios-linen.jpg);
+}
+body .navbar {
+  border-bottom: rgba(255, 255, 255, 0.2) solid 1px;
+}
+body .navbar .navbar-inner {
+  background: #111;
+  padding: 7px 20px;
+  text-shadow: none;
+  border: none;
+}
+body .navbar .navbar-inner a.brand {
+  color: #fff;
+  text-shadow: none;
+}
+body .navbar .nav {
+  margin-top: 2px;
+}
+body .navbar .nav > li a {
+  text-shadow: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 13px;
+}
+body .navbar .nav > li a:hover {
+  color: #3498db;
+}
+body .navbar .nav > li a#theme-current {
+  background: url(dropdown.png);
+  width: 223px;
+  height: 26px;
+  margin-right: 10px;
+  padding: 10px 0 0 13px;
+  font-weight: normal;
+  color: #ccc;
+  line-height: 1;
+  outline: 0 !important;
+}
+body .navbar .nav > li a#theme-current:hover {
+  color: #fff;
+}
+body .navbar .nav > li.join a {
+  background: #F05444;
+  margin-left: 10px;
+  border-radius: 3px;
+  color: #fff;
+  margin-top: 2px;
+  padding: 5px 20px;
+  transition: All 0.5s ease;
+}
+body .navbar .nav > li.join a:hover {
+  color: #fff;
+  background: #FFA93C;
+}
+body .navbar .nav > li.responsive {
+  padding-top: 3px;
+  margin-right: 20px;
+}
+body .navbar .nav > li.responsive ul li {
+  padding: 0;
+  margin: 0;
+}
+body .navbar .nav > li.responsive ul li a {
+  margin: 0;
+  background: #333;
+  color: #fff;
+  box-shadow: none;
+  border-radius: 0;
+  border: none;
+}
+body .navbar .nav > li.responsive ul li a:hover {
+  color: #fff;
+}
+body .navbar .nav > li.responsive ul li.current a,
+body .navbar .nav > li.responsive ul li a.active,
+body .navbar .nav > li.responsive ul li a:hover {
+  background: #008A17;
+}
+body .navbar .nav > li.responsive ul li:first-child a {
+  border-radius: 3px 0 0 3px;
+}
+body .navbar .nav > li.responsive ul li:last-child a {
+  border-radius: 0 3px 3px 0;
+}
+body .navbar .nav > li.responsive ul li:nth-child(2) {
+  margin-left: -4px;
+  margin-right: -4px;
+}
+body .navbar .nav > li.dropdown.open > .dropdown-toggle {
+  background: #21262b;
+}
+body .navbar .nav > li > ul#theme-selector {
+  margin-right: 12px;
+}
+body .navbar .nav > li > ul#theme-selector > li a {
+  color: #555;
+  font-weight: normal;
+  width: 190px;
+}
+body .navbar .nav > li > ul#theme-selector > li a:hover {
+  color: #fff;
+}
+body .navbar .nav li.colors ul {
+  margin-right: 16px;
+}
+body .navbar .nav li.colors ul li {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+body .navbar .nav li.colors ul li a {
+  width: 20px;
+  height: 20px;
+  margin-top: 3px;
+  background-image: none;
+  padding-left: 4px;
+  padding-right: 4px;
+  border: 0px;
+}
+body .navbar .nav li.colors ul li a.blue {
+  background-color: #008ff9;
+}
+body .navbar .nav li.colors ul li a.red {
+  background-color: #ac193d;
+}
+body .navbar .nav li.colors ul li a.green {
+  background-color: green;
+}
+body .navbar .nav li.colors ul li a.orange {
+  background-color: #ffab65;
+}
+body .navbar .nav li.colors ul li a.purple {
+  background-color: #8c0095;
+}
+body .navbar .nav li.colors ul li a.yellow {
+  background-color: #ff8f32;
+}
+body #preview {
+  margin-top: 54px;
+  background: url(ios-linen.jpg);
+}
+body #preview-frontpage {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body #preview-frontpage #preview-direction {
+  color: #333;
+  position: relative;
+  background: #fff;
+  padding: 30px;
+  border-radius: 3px;
+  margin-top: 35px;
+  float: right;
+  margin-right: 100px;
+}
+body #preview-frontpage #preview-direction:after,
+body #preview-frontpage #preview-direction:before {
+  bottom: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+body #preview-frontpage #preview-direction:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: #fff;
+  border-width: 20px;
+  left: 80%;
+  margin-left: -20px;
+}
+body #preview-frontpage #preview-direction:before {
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: #fff;
+  border-width: 26px;
+  left: 80%;
+  margin-left: -26px;
+}
+body #preview-frontpage #preview-direction h1 span {
+  color: #F05444;
+}
